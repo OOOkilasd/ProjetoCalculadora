@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: linear-gradient(320deg, #98c983, #88d1d7, #7d78bf);
+    display: flex;
+    font-family: sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: rgba(225, 225, 225, 0.30);
+    border: 1px solid rgba(225, 225, 225, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(225, 225, 225, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+.previous-operation {
+    font-size: 18px; /* Diminuído para não sobrecarregar */
+    color: #888;
+    text-align: right;
+    padding-bottom: 5px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.current-operation {
+    font-size: 35px;
+    color: #232323;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(225, 225, 225, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child {
+    background: #ff9f68;
+    color: #fff;
+}
+
+.calc-button:last-child:hover {
+    background-color: #f79c42;
+    color: #fff;
+}
+
+.calc-button:hover {
+    background-color: #f1f1f1;
+}
+
+.calc-button:active {
+    background-color: #ffef78;
+}
+
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
+
+/* Estilo de botões de operadores */
+.calc-button {
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.calc-button:hover {
+    background-color: #d4d4d4;
+}
+
+.calc-button:active {
+    transform: scale(0.95);
+}
+
+/* Botões com largura especial (C, 0, etc.) */
+.double {
+    flex-basis: 47%;
+}
+
+.triple {
+    flex-basis: 73%;
+}
+
+/* Estilo para a tela */
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(225, 225, 225, 0.75);
+    border: 1px solid rgba(225, 225, 225, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(225, 225, 225, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+.previous-operation {
+    font-size: 14px;
+    color: #888;
+    text-align: right;
+    padding-bottom: 1px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.current-operation {
+    font-size: 35px;
+    color: #232323;
+    text-align: right;
+    padding-top: 1px;
+}

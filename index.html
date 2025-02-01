@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora | Gabriel Negrelo</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        
+        <!-- Tela de exibição -->
+        <section class="screen">
+            <div class="previous-operation"> </div> <!-- Para a operação anterior -->
+            <div class="current-operation">0</div> <!-- Para o valor atual -->
+        </section>
+        
+
+        <!-- Botões da calculadora -->
+        <section class="calc-buttons">
+            <!-- Linha de botões de ação (limpar, backspace, divisão) -->
+            <div class="calc-button-row">
+                <button class="calc-button double">
+                    C
+                </button>
+                <button class="calc-button">
+                    &larr;
+                </button>
+                <button class="calc-button">
+                    &divide;
+                </button>
+            </div>
+            
+            <!-- Linha de números e multiplicação -->
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    7
+                </button>
+                <button class="calc-button">
+                    8
+                </button>
+                <button class="calc-button">
+                    9
+                </button>
+                <button class="calc-button">
+                    &times;
+                </button>
+            </div>
+
+            <!-- Linha de números e subtração -->
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    4
+                </button>
+                <button class="calc-button">
+                    5
+                </button>
+                <button class="calc-button">
+                    6
+                </button>
+                <button class="calc-button">
+                    &minus;
+                </button>
+            </div>
+            
+            <!-- Linha de números e adição -->
+            <div class="calc-button-row">
+                <button class="calc-button">
+                    1
+                </button>
+                <button class="calc-button">
+                    2
+                </button>
+                <button class="calc-button">
+                    3
+                </button>
+                <button class="calc-button">
+                    &plus;
+                </button>
+            </div>
+
+            <!-- Linha de 0 e igual -->
+            <div class="calc-button-row">
+                <button class="calc-button triple">
+                    0
+                </button>
+                <button class="calc-button">
+                    &equals;
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script com a lógica da calculadora -->
+    <script src="script.js"></script>
+</body>
+</html>
